@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-07T23:02:35 IST" name="Default suite" finished-at="2024-11-07T23:02:54 IST" duration-ms="19544">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucmberRunnerSignin@5f049ea1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-11-07T23:02:35 IST" name="Default test" finished-at="2024-11-07T23:02:54 IST" duration-ms="19544">
+      <class name="runner.CucmberRunnerSignin">
+        <test-method is-config="true" signature="StartReport()[pri:0, instance:runner.CucmberRunnerSignin@5f049ea1]" started-at="2024-11-07T23:02:34 IST" name="StartReport" finished-at="2024-11-07T23:02:35 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartReport -->
+        <test-method is-config="true" signature="setValue()[pri:0, instance:runner.CucmberRunnerSignin@5f049ea1]" started-at="2024-11-07T23:02:35 IST" name="setValue" finished-at="2024-11-07T23:02:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValue -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CucmberRunnerSignin@5f049ea1]" started-at="2024-11-07T23:02:35 IST" name="setUpClass" finished-at="2024-11-07T23:02:36 IST" duration-ms="750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7e4579c7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="TestCaseDetails()[pri:0, instance:runner.CucmberRunnerSignin@5f049ea1]" started-at="2024-11-07T23:02:36 IST" name="TestCaseDetails" finished-at="2024-11-07T23:02:36 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCaseDetails -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:runner.CucmberRunnerSignin@5f049ea1]" started-at="2024-11-07T23:02:36 IST" name="preCondition" finished-at="2024-11-07T23:02:43 IST" duration-ms="7936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucmberRunnerSignin@5f049ea1]" started-at="2024-11-07T23:02:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-07T23:02:53 IST" duration-ms="9319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Sign in with positive credientials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sign in functionality of luma"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:runner.CucmberRunnerSignin@5f049ea1]" started-at="2024-11-07T23:02:53 IST" name="postCondition" finished-at="2024-11-07T23:02:53 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucmberRunnerSignin@5f049ea1]" started-at="2024-11-07T23:02:53 IST" name="tearDownClass" finished-at="2024-11-07T23:02:54 IST" duration-ms="1475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="stopReport()[pri:0, instance:runner.CucmberRunnerSignin@5f049ea1]" started-at="2024-11-07T23:02:54 IST" name="stopReport" finished-at="2024-11-07T23:02:55 IST" duration-ms="757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- runner.CucmberRunnerSignin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
