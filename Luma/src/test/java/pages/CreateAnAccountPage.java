@@ -1,6 +1,7 @@
 package pages;
 
 import java.io.IOException;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 
@@ -8,7 +9,8 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 
 public class CreateAnAccountPage extends BaseClass {
-	
+	//public static int ranNum;
+	//public static String uniqueEmail;
 	
 	@And("enter the first name")
 	public void FirstName() throws IOException {
@@ -38,9 +40,11 @@ public class CreateAnAccountPage extends BaseClass {
 	
 	@And("enter the email")
 	public void Email() throws IOException {
-		//int ranNum = (int)(Math.random()*9999+1000);
+		//ranNum = (int)(Math.random()*9999+1000);
 		try {
-			driver.findElement(By.xpath("//input[@type='email']")).sendKeys("mk78@gmail.com");
+			uniqueEmail = "manish"+ new Random().nextInt(100000)+"@gamil.com";
+			driver.findElement(By.xpath("//input[@type='email']")).sendKeys(uniqueEmail);
+			
 			reportStep("Email is entered successfully", "pass");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -77,7 +81,7 @@ public class CreateAnAccountPage extends BaseClass {
 	
 	@When("click on the create an account button")
 	public void CreateButton() throws IOException {
-		
+	// After clicking on the create button you will be redirected to My account page	
 		try {
 			driver.findElement(By.xpath("//button[@class='action submit primary']")).click();
 			reportStep("Create button clicked successfully", "pass");

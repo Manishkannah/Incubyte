@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="runner.CucmberRunnerSignin">
+      <class name="runner.CucumberRunnerCreateAccount">
         <methods>
           <include name="TestCaseDetails"/>
           <include name="setUpClass"/>
           <include name="preCondition"/>
-          <include name="setValue"/>
           <include name="stopReport"/>
-          <include name="runScenario"/>
+          <include name="runScenario" invocation-numbers="0"/>
           <include name="tearDownClass"/>
           <include name="StartReport"/>
+          <include name="CucumberRunnerTS001"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- runner.CucmberRunnerSignin -->
+      </class> <!-- runner.CucumberRunnerCreateAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

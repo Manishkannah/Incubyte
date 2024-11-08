@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
@@ -12,7 +13,7 @@ public class HomePage extends BaseClass {
 	
 	@Given("click on the create an account")
 	public void CreateAccount() throws InterruptedException, IOException {
-		
+	// clicking create account button will redirect you to the create account page	
 		
 		Thread.sleep(2000);
 		
@@ -27,9 +28,9 @@ public class HomePage extends BaseClass {
 		
 	}
 	
-	@Given("click on the Sign in")
+	@And("click on the Sign in")
 	public void SignIn() throws InterruptedException, IOException {
-		
+		// clicking sign in button will redirect you to the sign in page page	
 		try {
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("(//uL[@class='header links']//a)[2]")).click();

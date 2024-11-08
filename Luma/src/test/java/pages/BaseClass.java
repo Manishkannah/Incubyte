@@ -27,7 +27,7 @@ public class BaseClass extends AbstractTestNGCucumberTests {
 	public static ExtentReports extent;
 	public static ExtentTest test;
 	public String TestName,TestDescription,Author,Category;
-	
+	public static String uniqueEmail;
 	
 	
 	@BeforeSuite
