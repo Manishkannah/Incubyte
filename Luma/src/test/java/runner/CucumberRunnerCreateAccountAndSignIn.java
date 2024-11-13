@@ -15,9 +15,9 @@ public class CucumberRunnerCreateAccountAndSignIn extends BaseClass {
 	@BeforeTest
 	public void CucumberRunnerTS001() {
 		
-		TestName="Verify Sign";
-		TestDescription="verifying the Sign in functionality";
-		Category="smoke";
+		TestName="Verify Create Account and Sign IN";
+		TestDescription="verifying the Create Account and Sign With that account";
+		Category="Regression";
 		Author="manish";
 		
 	}

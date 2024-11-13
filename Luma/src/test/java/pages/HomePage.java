@@ -1,8 +1,11 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.testng.asserts.SoftAssert;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -43,30 +46,25 @@ public class HomePage extends BaseClass {
 		
 	}
 	
+	
 	@Then("Home page to be displayed")
-	public void verifySignIn() throws IOException {
-		
+	public void verifySignIn() throws IOException {	
 		try {
-			String title = driver.findElement(By.xpath("(//span[contains(text(),'Welcome, Manish kannah!')])[1]")).getText();
-			
-			if(title.contains("Welcome")) {
-				
-				System.out.println("The user Signed In successfully");
-				
-			}
-			
-			else {
-				
-				System.out.println("The user sign in fail");
-				
-			}
-			reportStep("Sign verified successfully", "pass");
+			softAssert = new SoftAssert();
+			String Actual = driver.findElement(By.xpath("(//span[contains(text(),'Welcome, Manish kannah!')])[1]")).getText();
+			System.out.println(Actual);
+			String expected = "Welcome, Manish kannah!";
+			softAssert.assertEquals(Actual,expected,"The user Signed In successfully");
+			 softAssert.assertAll();
+			 reportStep("Sign verified successfully", "pass");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			reportStep("Sign in is not verified successfully", "fail");
 			e.printStackTrace();
 		}
-	}
+	
+
+}
 
 
 }

@@ -3,7 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="runner.CucumberRunnerCreateAccount">
+      <class name="runner.CucumberRunnerCreateAccountAndSignIn">
         <methods>
           <include name="TestCaseDetails"/>
           <include name="setUpClass"/>
@@ -15,7 +15,7 @@
           <include name="CucumberRunnerTS001"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- runner.CucumberRunnerCreateAccount -->
+      </class> <!-- runner.CucumberRunnerCreateAccountAndSignIn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

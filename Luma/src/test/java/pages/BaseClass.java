@@ -12,6 +12,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReporter;
 import com.aventstack.extentreports.ExtentReports;
@@ -28,6 +29,7 @@ public class BaseClass extends AbstractTestNGCucumberTests {
 	public static ExtentTest test;
 	public String TestName,TestDescription,Author,Category;
 	public static String uniqueEmail;
+	public static  SoftAssert softAssert;
 	
 	
 	@BeforeSuite
@@ -86,7 +88,7 @@ public class BaseClass extends AbstractTestNGCucumberTests {
 	
 	@AfterMethod
 	public void postCondition() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 	@AfterSuite
